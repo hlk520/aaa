@@ -4,7 +4,25 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
 		<title></title>
+		<script>
+			document.documentElement.style.fontSize=innerWidth/16+'px';
+		</script>
 		<style>
+			@font-face {font-family: "iconfont";
+	          src: url('font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	          url('font/iconfont.woff') format('woff'), /* chrome, firefox */
+	          url('font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+	          url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+            }
+
+        .iconfont {
+          font-family:"iconfont" !important;
+          font-size:16px;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
 			*{margin: 0;padding: 0;box-sizing: border-box;}
 			html,body{
 				width: 100%;
@@ -23,9 +41,10 @@
 			}
 			footer{
 				bottom: 0;
+				overflow: hidden;
 			}
 			body{
-				padding-top: 40px;
+				padding-top: 11.7rem;
 				padding-bottom: 40px;
 			}
 			section{
@@ -35,9 +54,9 @@
 			ul{
 				height: 100%;
 			}
-			li{
+			ul li{
 				position: relative;
-				height: 80px;
+				height: 3.4rem;
 				border-bottom: 1px solid #ccc;
 				padding-left: 60px;
 				padding-top: 0.1px;
@@ -49,7 +68,7 @@
 				-webkit-tap-highlight-color: transparent;
 				display: block;
 			}
-			img{
+			ul li img{
 				max-width: 50px;
 				position: absolute;
 				top: 15px;
@@ -63,28 +82,52 @@
 				white-space: nowrap;
 				text-overflow: ellipsis;
 			}
-			span{
+			ul span{
 				position: absolute;
 				right: 10px;
 				top: 30px;
 			}
+			ol{
+				width: 100%;
+				/*display: flex;
+				justify-content: space-around;*/
+			}
+			ol li{
+				width: 25%;
+				float: left;
+				/*margin-left: 10%;*/
+				list-style: none;
+				text-align: center;
+				/*white-space: pre-wrap;*/
+				font-size: 12px;
+				
+			}
+		    ol li span{
+		    	height: 25px;
+		    	display: block;
+		    	margin-top: -7px;
+		    }
+		   .ban{
+		   	width: 100%;
+		   	position: absolute;
+		   	top: 40px;
+		   }
+		   .ban img{
+		   	width: 100%;
+		   }
 		</style>
-		<!--<script>
-			document.addEventListener('touchstart',function(e){
-				e.preventDefault()
-			})
-		</script>-->
 	</head>
 	<body>
 		<header>头部</header>
+		<div class="ban"><img src="img/15.jpg"/></div>
 		<section>
 			<ul>
-				<li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
-			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
-			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
-			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
-			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
-			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
+				<li><img src="img/tou1.jpg"/><h4>我的昵称1：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
+			    <li><img src="img/tou1.jpg"/><h4>我的昵称2：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
+			    <li><img src="img/tou1.jpg"/><h4>我的昵称3：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
+			    <li><img src="img/tou1.jpg"/><h4>我的昵称4：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
+			    <li><img src="img/tou1.jpg"/><h4>我的昵称5：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
+			    <li><img src="img/tou1.jpg"/><h4>我的昵称6：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
 			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
 			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
 			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
@@ -101,6 +144,13 @@
 			    <li><img src="img/tou1.jpg"/><h4>我的昵称：</h4><p>这是一个很长很长很长很长很长很长</p><span>08-29</span></li>
 			</ul>
 		</section>
-		<footer>尾部</footer>
+		<footer>
+			<ol>
+				<li><span class="iconfont">&#xe6a0;</span><span>微信</span></li>
+				<li><span class="iconfont">&#xe6a1;</span><span>通讯录</span></li>
+				<li><span class="iconfont">&#xe660;</span><span>发现</span></li>
+				<li><span class="iconfont">&#xe60b;</span><span>我</span></li>
+			</ol>
+		</footer>
 	</body>
 </html>
