@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		
+		<style>
+			*{margin: 0;padding: 0;box-sizing: border-box;}
+			.swiper-wrapper div{
+				height: 300px;
+				border: 1px solid #000;
+			}
+			.swiper-wrapper div:nth-child(1){
+				background: url(img/3.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			.swiper-wrapper div:nth-child(2){
+				background: url(img/5.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			.swiper-wrapper div:nth-child(3){
+				background: url(img/7.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			.swiper-wrapper div:nth-child(4){
+				background: url(img/8.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			.swiper-wrapper div:nth-child(5){
+				background: url(img/11.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+		        <div class="swiper-slide"></div>
+		        <div class="swiper-slide"></div>
+		        <div class="swiper-slide"></div>
+		        <div class="swiper-slide"></div>
+		        <div class="swiper-slide"></div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		    <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+		</div>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script>        
+		  var mySwiper = new Swiper ('.swiper-container', {
+			    autoplay:2000,
+			    autoplayDisableOnInteraction:false,
+			    // 如果需要分页器
+			    pagination: '.swiper-pagination',
+			    
+			    // 如果需要前进后退按钮
+			    nextButton: '.swiper-button-next',
+			    prevButton: '.swiper-button-prev',
+			    
+		  })        
+  		</script>
+	</body>
+</html>
